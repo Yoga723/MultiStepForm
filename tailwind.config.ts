@@ -13,6 +13,12 @@ const config: Config = {
         "gradient-conic":
           "conic-gradient(from 180deg at 50% 50%, var(--tw-gradient-stops))",
       },
+      fontFamily: {
+        sans: ["Roboto", "Helvetica", "Arial", "sans-serif"],
+        Ubuntu: ["Ubuntu"],
+        "Ubuntu-500": ["Ubuntu-500"],
+        "Ubuntu-700": ["Ubuntu-700"],
+      },
     },
   },
   plugins: [],

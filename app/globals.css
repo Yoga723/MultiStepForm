@@ -3,31 +3,37 @@
 @tailwind utilities;
 
 :root {
-  --foreground-rgb: 0, 0, 0;
-  --background-start-rgb: 214, 219, 220;
-  --background-end-rgb: 255, 255, 255;
+  background: hsl(217, 100%, 97%);
 }
 
-@media (prefers-color-scheme: dark) {
-  :root {
-    --foreground-rgb: 255, 255, 255;
-    --background-start-rgb: 0, 0, 0;
-    --background-end-rgb: 0, 0, 0;
-  }
+.mainStyle {
+  @apply flex flex-col min-w-full min-h-screen items-center md:justify-center;
 }
 
-body {
-  color: rgb(var(--foreground-rgb));
-  background: linear-gradient(
-      to bottom,
-      transparent,
-      rgb(var(--background-end-rgb))
-    )
-    rgb(var(--background-start-rgb));
+.formSection {
+  @apply w-[90%] h-fit md:h-[39rem] bg-white rounded-lg border-2 border-white mt-9 lg:mt-0 relative md:flex flex-row shadow-2xl p-3;
 }
 
-@layer utilities {
-  .text-balance {
-    text-wrap: balance;
-  }
+@font-face {
+  font-family: "Ubuntu";
+  src: url(../assets/fonts/Ubuntu-Regular.ttf);
+}
+@font-face {
+  font-family: "Ubuntu-500";
+  src: url(../assets/fonts/Ubuntu-Medium.ttf);
+}
+@font-face {
+  font-family: "Ubuntu-700";
+  src: url(../assets/fonts/Ubuntu-Bold.ttf);
+}
+
+/* Remove arrow for number input */
+.remove-arrow::-webkit-inner-spin-button,
+.remove-arrow::-webkit-outer-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+.remove-arrow {
+  -moz-appearance: textfield;
 }
