@@ -51,11 +51,12 @@ Then crop/optimize/edit your image however you like, add it to your project, and
 - Solution URL: [Add solution URL here](https://your-solution-url.com)
 - Live Site URL: [Add live site URL here](https://your-live-site-url.com)
 
-## My process
-1. 1 Parent component where inside of it will display 5 components, use router module to navigate between different child components. Desain dibagian parent, dan hanya navigasi antara form/steps jadi perkiraan <div><app-router></app-router></div>. Dibagian app-router atau child componentnya hanya bagian form saja
+
 
 ## TODO
-1. buat condition untuk ubah background circle steps berdasarkan stepnya 
+1. refactor code form personal datana, ayena masih make 2 button navigasi, kuduna 1 btn jeng kudu dijero tag form lain diluar jiga nu mobileNavigatena anu di luar form. (Di Skip, hoream. Best practicena mah di refactor sih )
+
+2. Data dari personal data sudah bisa dikirim ke fungsi, tinggal buat filter apakah datanya semua terisi atau tidak.
 
 ### Built with
 

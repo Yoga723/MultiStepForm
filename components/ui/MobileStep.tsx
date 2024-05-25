@@ -5,7 +5,7 @@ import Image from "next/image";
 import bgMobileSide from "@/assets/images/bg-sidebar-mobile.svg";
 const MobileStep = () => {
   return (
-    <aside>
+    <aside className="">
       <div className="md:hidden">
         <StepsCounter />
       </div>

@@ -8,15 +8,18 @@ const page = () => {
   return (
     <main className="mainStyle">
       <MobileStep />
-      <section className="formSection">
-        <DesktopStep />
-        <div className="flex flex-[1] w-full h-full  justify-center">
-          <Plans />
+      <section className="sectionStyle">
+        <div className="formStyle">
+          <DesktopStep />
+          <div className=" flex flex-[1] w-full h-full  justify-center">
+            <Plans />
+          </div>
         </div>
       </section>
       <MobileNavigate
+        headTo={"plan"}
         backTo="/"
-        headTo="add-ons"
+        stepState={"PlanInfo"}
       />
     </main>
   );
